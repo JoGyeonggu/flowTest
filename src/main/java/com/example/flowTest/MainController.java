@@ -11,6 +11,11 @@ public class MainController {
         return new Greeting("Hello, Spring Boot!");
     }
 
+    @GetMapping("/feature")
+    public Greeting feature() {
+        return new Greeting("Hello, Spring feature!");
+    }
+
     private static class Greeting {
         private final String message;
 
